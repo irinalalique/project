@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Alegreya Sans - Light";
+  src: url("../fonts/AlegreyaSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("../fonts/AlegreyaSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Bold";
+  src: url("../fonts/AlegreyaSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Extra Bold";
+  src: url("../fonts/AlegreyaSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Medium";
+  src: url("../fonts/AlegreyaSans-Medium.ttf"); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+.reasons {
+  min-height: 697px;
+  position: relative;
+  background-color: #ffffff; }
+  .reasons .figure_leaf {
+    background-image: url(../img/figure_leaf.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 191px;
+    height: 314px;
+    position: absolute;
+    top: 195px;
+    left: 0; }
+    @media screen and (max-width: 768px) {
+      .reasons .figure_leaf {
+        top: 275px; } }
+    @media screen and (max-width: 480px) {
+      .reasons .figure_leaf {
+        width: 177px;
+        height: 297px;
+        top: 258px;
+        background-position: -10px 0; } }
+  .reasons .chocco h2 {
+    padding-top: 100px;
+    margin: 0 auto; }
+  .reasons .chocco__description {
+    max-width: 409px;
+    height: 39px;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    text-align: center;
+    margin: 23px auto 57px; }
+  .reasons .advantages {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 768px) {
+      .reasons .advantages {
+        flex-wrap: wrap;
+        padding-bottom: 47px; } }
+    .reasons .advantages .advantages__decor {
+      position: absolute; }
+      .reasons .advantages .advantages__decor-left {
+        top: 50px;
+        left: 31%; }
+      .reasons .advantages .advantages__decor-right {
+        top: 50px;
+        left: 64%; }
+      @media screen and (max-width: 768px) {
+        .reasons .advantages .advantages__decor {
+          display: none; } }
+    .reasons .advantages__advantage {
+      text-align: center;
+      flex-basis: calc(100%/12*4 - 80px); }
+      @media screen and (max-width: 768px) {
+        .reasons .advantages__advantage {
+          flex-basis: calc(100% - 80px);
+          padding-bottom: 47px; }
+          .reasons .advantages__advantage:last-child {
+            padding-bottom: 30px; } }
+    .reasons .advantages__inner h3 {
+      color: #000000;
+      font-family: "Alegreya Sans - Bold";
+      font-size: 27px; }
+    .reasons .advantages__desc {
+      width: 285px;
+      height: 57px;
+      color: #666666;
+      font-family: "Alegreya Sans - Light";
+      font-size: 18px;
+      margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        .reasons .advantages__desc {
+          max-width: 100%;
+          margin: 0 auto;
+          text-align: center; } }
+  .reasons .raspberry {
+    background-image: url(../img/raspberry.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 161px;
+    height: 315px;
+    position: absolute;
+    left: 0;
+    bottom: -117px;
+    z-index: 100; }
+    @media screen and (max-width: 768px) {
+      .reasons .raspberry {
+        bottom: -58px; } }
+    @media screen and (max-width: 480px) {
+      .reasons .raspberry {
+        width: 125px;
+        height: 283px;
+        background-position: -20px 0; } }

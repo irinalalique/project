@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Alegreya Sans - Light";
+  src: url("../fonts/AlegreyaSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("../fonts/AlegreyaSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Bold";
+  src: url("../fonts/AlegreyaSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Extra Bold";
+  src: url("../fonts/AlegreyaSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Medium";
+  src: url("../fonts/AlegreyaSans-Medium.ttf"); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+.company {
+  margin: 68px 80px 0;
+  min-height: 766px; }
+
+.team {
+  position: relative; }
+  .team .icon_figure {
+    position: absolute;
+    left: 80%;
+    top: -290px;
+    z-index: 100;
+    pointer-events: none; }
+    .team .icon_figure img {
+      width: 100%; }
+    @media screen and (max-width: 768px) {
+      .team .icon_figure {
+        width: 155px;
+        height: 462px;
+        left: 79%; } }
+    @media screen and (max-width: 480px) {
+      .team .icon_figure {
+        top: -264px;
+        left: 66%; } }
+  .team .berry {
+    background-image: url("../img/berry1.png");
+    background-position: 13px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 135px;
+    height: 112px;
+    position: absolute;
+    left: 86%;
+    top: -65px;
+    z-index: 110; }
+    @media screen and (max-width: 768px) {
+      .team .berry {
+        width: 102px;
+        height: 85px;
+        left: 86%; } }
+    @media screen and (max-width: 480px) {
+      .team .berry {
+        left: 77%; } }
+  .team h2 {
+    margin-bottom: 50px;
+    padding-top: 104px; }
+    @media screen and (max-width: 768px) {
+      .team h2 {
+        padding-top: 56px; } }
+
+.items {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .items {
+      max-width: 100%;
+      width: 480px;
+      margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .items {
+      position: relative;
+      z-index: 200; } }
+  .items .item {
+    flex-basis: 223px;
+    width: calc(25% - 16px);
+    margin: 0 8px; }
+    @media screen and (max-width: 768px) {
+      .items .item {
+        flex-basis: 32%;
+        width: calc(50% - 16px);
+        padding-bottom: 90px; } }
+    @media screen and (max-width: 480px) {
+      .items .item {
+        width: calc(50% - 14px);
+        margin: 0 7px; } }
+    .items .item__img {
+      width: 223px; }
+      .items .item__img img {
+        max-width: 100%; }
+    .items .item:nth-child(even) {
+      padding-top: 57px; }
+      @media screen and (max-width: 768px) {
+        .items .item:nth-child(even) {
+          padding-top: 0; } }
+    .items .item .item__img {
+      margin-bottom: 25px; }
+    .items .item .item__name {
+      height: 18px;
+      color: #323232;
+      font-family: "Alegreya Sans";
+      font-size: 21px;
+      text-align: center;
+      cursor: pointer; }
+      .items .item .item__name:after {
+        content: url("../img/Polygon_2.png");
+        padding: 10px; }
+    .items .item .item__active:after {
+      content: url("../img/Polygon_1.png"); }
+    .items .item .acc-body {
+      display: none; }
+      .items .item .acc-body .acc-body__office {
+        color: #281e1e;
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        margin-top: 13px;
+        text-align: center; }
+      .items .item .acc-body .acc-body__office-description {
+        color: #666666;
+        font-size: 18px;
+        font-family: "Alegreya Sans - Light";
+        margin-top: 6px;
+        text-align: center; }

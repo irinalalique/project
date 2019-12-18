@@ -1,0 +1,135 @@
+@import "project.scss";
+
+.reasons{
+	min-height: 697px;
+	position: relative;
+	background-color: $white;
+	
+	.figure_leaf{
+		background-image: url(../img/figure_leaf.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		width: 191px;
+		height: 314px;
+		position: absolute;
+		top: 195px;
+		left: 0;
+		
+		@include tablet{
+			top: 275px;
+		}
+		
+		@include mobile{
+			width: 177px;
+			height: 297px;
+			top: 258px;
+			background-position: -10px 0;
+		}
+	}	
+		
+	.chocco h2{
+		padding-top: 100px;
+		margin: 0 auto;
+	}	
+
+	.chocco__description{
+		max-width: 409px;
+		height: 39px;
+		color: #666666;
+		font-family: "Alegreya Sans";
+		font-size: 18px;
+		text-align: center;
+		margin: 23px auto 57px;
+	}
+	
+	.advantages{
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		
+		@include tablet{
+			flex-wrap: wrap;
+			padding-bottom: 47px;
+		}
+
+		.advantages__decor{
+			position: absolute;
+		
+			&-left{
+				top: 50px;
+				left: 31%;
+			}
+			
+			&-right{
+				top: 50px;
+				left: 64%;
+			}
+			
+			@include tablet{
+				display: none;
+			}
+		}	
+		
+		
+		&__advantage{
+			text-align: center;
+			flex-basis: calc(100%/12*4 - 80px);
+			
+			@include tablet{
+				flex-basis: calc(100% - 80px);
+				padding-bottom: 47px;
+				
+				&:last-child{
+					padding-bottom: 30px;
+				}
+			}	
+		}	
+
+		&__inner h3{
+			color: #000000;
+			font-family: "Alegreya Sans - Bold";
+			font-size: 27px;
+		}	
+
+		&__desc{
+			width: 285px;
+			height: 57px;
+			color: #666666;
+			font-family: "Alegreya Sans - Light";
+			font-size: 18px;
+			margin-right: 0;
+			
+			@include tablet{
+				max-width: 100%;
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+	}
+	
+	.raspberry{
+		background-image: url(../img/raspberry.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 161px;
+		height: 315px;
+		position: absolute;
+		left: 0;
+		bottom: -117px;
+		z-index: 100;
+		
+		@include tablet{
+			bottom: -58px;
+		}
+		
+		@include mobile{
+			width: 125px;
+			height: 283px;
+			background-position: -20px 0;
+		}
+	}
+}	
+	

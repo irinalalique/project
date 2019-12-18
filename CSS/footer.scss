@@ -1,0 +1,134 @@
+@import "project.scss";
+
+.footer{
+	margin: 0 auto;
+	background-color: $white;
+	display: flex;
+	
+	@include mobile{
+		flex-wrap: wrap;
+	}
+
+	.contacts{
+		width: 50%;
+		margin: 26px 79px;
+		
+		@include tablet{
+			width: 100%;
+			margin: 26px 22px;
+		}
+		
+		@include mobile{
+			margin: 28px auto 15px;
+			text-align: center;
+		}
+		
+		&__address{
+			color: #010101;
+			font-family: "Alegreya Sans";
+			font-size: 21px;
+			margin-bottom: 5px;
+			
+			@include mobile{
+				margin-bottom: 0;
+			}
+		}	
+
+		&__phone{
+			background-image: url(../img/phone.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+			padding-left: 20px;
+			color: $green;
+			font-family: "Alegreya Sans";
+			font-size: 21px;
+			
+			@include mobile{
+				background-position: 33% 80%;
+				//padding-top: 19px;
+				padding-top: 13px;
+				padding-left: 0;
+			}
+		}
+	}
+	
+	.socials{
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 42px;
+		margin-right: 80px;
+		margin-bottom: 26px;
+		align-items: center;
+		
+		@include tablet{
+			width: 100%;
+			margin-right: 8px;
+		}
+		
+		@include mobile{
+			margin: 0 auto 30px;
+			text-align: center;
+			justify-content: center;
+		}
+		
+		.social{
+			margin-right: 20px;
+		}
+	}	
+}
+	
+	.vk:hover{
+				fill: #000;
+				cursor: pointer;
+	}
+		
+		.fb:hover{
+				fill: #000;
+				cursor: pointer;
+		}
+
+		.inst:hover{
+			fill: #000;
+			cursor: pointer;
+		}	
+		
+		.tw:hover{
+			fill: #000;
+			cursor: pointer;
+		}
+		
+.full-screen-menu{
+	position: relative;
+	width: 768px;
+	min-height: 1000px;
+	background-color: #2f3234;
+	opacity: 0.99;
+	background-size: 100%;
+	margin: 0 auto;
+	display: none;
+	
+	.image-menu{
+		position: absolute;
+		top: 32px;
+		right: 26px;
+	}
+	
+	.menu-full-screen{
+		padding-top: 143px;
+		margin: 0 auto;
+		text-align: center;
+	
+		li a{
+			
+			color: $white;
+			font-family: "Alegreya Sans";
+			font-size: 36px;
+			line-height: 72px;
+			
+			&:hover{
+				text-decoration: underline;	
+			}
+		}	
+	}
+}		

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Alegreya Sans - Light";
+  src: url("../fonts/AlegreyaSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("../fonts/AlegreyaSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Bold";
+  src: url("../fonts/AlegreyaSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Extra Bold";
+  src: url("../fonts/AlegreyaSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Medium";
+  src: url("../fonts/AlegreyaSans-Medium.ttf"); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+.swiper-wrapper {
+  position: relative;
+  max-width: 1100px;
+  min-height: 654px;
+  background-color: #f8faf9; }
+  @media screen and (max-width: 768px) {
+    .swiper-wrapper {
+      max-width: 100%;
+      min-height: 887px; } }
+  .swiper-wrapper .swiper-slide {
+    width: 100%;
+    display: flex;
+    padding-top: 112px; }
+    @media screen and (max-width: 768px) {
+      .swiper-wrapper .swiper-slide {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 71px; } }
+    .swiper-wrapper .swiper-slide__image {
+      position: relative;
+      width: 50%;
+      max-width: 462px;
+      padding: 3px 40px;
+      box-sizing: border-box; }
+      @media screen and (max-width: 768px) {
+        .swiper-wrapper .swiper-slide__image {
+          width: 100%;
+          max-width: 100%; } }
+    .swiper-wrapper .swiper-slide__img {
+      max-width: 462px; }
+      @media screen and (max-width: 768px) {
+        .swiper-wrapper .swiper-slide__img {
+          max-width: 370px;
+          margin: 0 auto; } }
+      .swiper-wrapper .swiper-slide__img img {
+        width: 100%; }
+    .swiper-wrapper .swiper-slide .text {
+      width: 50%;
+      padding: 18px 40px;
+      box-sizing: border-box; }
+      @media screen and (max-width: 768px) {
+        .swiper-wrapper .swiper-slide .text {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .swiper-wrapper .swiper-slide .text__subtitle {
+          width: 331px;
+          margin: 0 auto;
+          text-align: center; } }
+      .swiper-wrapper .swiper-slide .text__composition {
+        color: #323232;
+        font-family: "Alegreya Sans";
+        font-size: 24px;
+        margin-top: 32px;
+        margin-bottom: 23px; }
+        @media screen and (max-width: 768px) {
+          .swiper-wrapper .swiper-slide .text__composition {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px; } }
+      .swiper-wrapper .swiper-slide .text__composition-desc {
+        max-width: 338px;
+        height: 77px;
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 18px; }
+        @media screen and (max-width: 768px) {
+          .swiper-wrapper .swiper-slide .text__composition-desc {
+            max-width: 386px;
+            margin: 0 auto;
+            text-align: center; } }
+      .swiper-wrapper .swiper-slide .text__subtitle {
+        color: #0d0d0d;
+        font-family: "Alegreya Sans - Bold";
+        font-size: 2.25rem;
+        text-transform: uppercase; }
+      .swiper-wrapper .swiper-slide .text__calorific-heft {
+        display: flex;
+        margin-top: 51px;
+        color: #333333;
+        font-family: "Alegreya Sans";
+        font-size: 18px; }
+        @media screen and (max-width: 768px) {
+          .swiper-wrapper .swiper-slide .text__calorific-heft {
+            justify-content: center;
+            margin-top: 30px; } }
+        .swiper-wrapper .swiper-slide .text__calorific-heft span {
+          display: block;
+          font-family: "Alegreya Sans - Bold"; }
+      .swiper-wrapper .swiper-slide .text__calorific-value {
+        margin-right: 53px; }
+        @media screen and (max-width: 768px) {
+          .swiper-wrapper .swiper-slide .text__calorific-value {
+            margin-right: 77px; } }
+      .swiper-wrapper .swiper-slide .text__price {
+        display: flex; }
+        @media screen and (max-width: 768px) {
+          .swiper-wrapper .swiper-slide .text__price {
+            justify-content: center;
+            padding-bottom: 50px; } }
+      .swiper-wrapper .swiper-slide .text__cost {
+        color: #0d0d0d;
+        font-family: "Alegreya Sans - Light";
+        font-size: 60px;
+        margin-top: 32px; }
+      .swiper-wrapper .swiper-slide .text .button-swiper {
+        margin-top: 35px;
+        margin-left: 31px; }

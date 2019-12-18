@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Alegreya Sans - Light";
+  src: url("../fonts/AlegreyaSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("../fonts/AlegreyaSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Bold";
+  src: url("../fonts/AlegreyaSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Extra Bold";
+  src: url("../fonts/AlegreyaSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Alegreya Sans - Medium";
+  src: url("../fonts/AlegreyaSans-Medium.ttf"); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+.how-we-work {
+  position: relative;
+  min-height: 737px;
+  background-color: #f8faf9; }
+  .how-we-work h2 {
+    padding-top: 113px; }
+    @media screen and (max-width: 480px) {
+      .how-we-work h2 {
+        padding-top: 81px; } }
+  @media screen and (max-width: 480px) {
+    .how-we-work {
+      min-height: 453px; } }
+  .how-we-work .video {
+    position: relative;
+    max-width: 660px;
+    width: 100%;
+    height: 370px;
+    margin: 57px auto; }
+    @media screen and (max-width: 768px) {
+      .how-we-work .video {
+        max-width: 591px; } }
+    @media screen and (max-width: 480px) {
+      .how-we-work .video {
+        max-width: 397px;
+        margin-bottom: 0; } }
+    .how-we-work .video .relation {
+      position: relative; }
+      .how-we-work .video .relation__ratio {
+        padding-top: 56.25%;
+        height: 0; }
+      .how-we-work .video .relation__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .how-we-work .video iframe {
+      width: 100%;
+      height: 370px;
+      border: none; }
+    .how-we-work .video .play {
+      position: absolute;
+      top: center;
+      left: center;
+      top: 149px;
+      left: 307px; }
+    .how-we-work .video__overlay {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .how-we-work .video__overlay img {
+        width: 100%; }
+      @media screen and (max-width: 768px) {
+        .how-we-work .video__overlay {
+          width: 591px; } }
+      @media screen and (max-width: 480px) {
+        .how-we-work .video__overlay {
+          width: 397px; } }
+    .how-we-work .video__controls {
+      position: absolute;
+      bottom: -35px;
+      left: 0; }
+      @media screen and (max-width: 768px) {
+        .how-we-work .video__controls {
+          width: 591px;
+          bottom: 8px; } }
+      @media screen and (max-width: 480px) {
+        .how-we-work .video__controls {
+          bottom: 127px;
+          width: 397px; } }
+  .how-we-work .work-decor {
+    width: 72px;
+    height: 135px;
+    position: absolute;
+    bottom: 70px;
+    left: 30px; }
+    .how-we-work .work-decor img {
+      width: 100%; }
+    @media screen and (max-width: 768px) {
+      .how-we-work .work-decor {
+        width: 46px;
+        height: 95px;
+        bottom: 235px;
+        left: -2px; } }
+    @media screen and (max-width: 480px) {
+      .how-we-work .work-decor {
+        bottom: 75px;
+        left: -3px; } }
+  .how-we-work .video-decor {
+    position: absolute;
+    top: 165px;
+    right: 65px;
+    width: 90px;
+    height: 77px; }
+    .how-we-work .video-decor img {
+      width: 100%; }
+    @media screen and (max-width: 768px) {
+      .how-we-work .video-decor {
+        width: 62px;
+        height: 53px;
+        top: 185px;
+        right: 32px; } }
+    @media screen and (max-width: 480px) {
+      .how-we-work .video-decor {
+        top: 137px;
+        right: 0; } }

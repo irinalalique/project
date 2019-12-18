@@ -1,0 +1,220 @@
+@import "project.scss";
+
+.reviews{
+	position: relative;
+  min-height: 816px;
+	background-color: $white;
+	
+	&__decor{
+		background-image: url("../img/berry2.png");
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size: cover;
+		width: 173px;
+		height: 99px;
+		position: absolute;
+		top: 20px;
+		right: 0;
+		
+		@include tablet{
+			width: 113px;
+			height: 79px;
+			background-position: 0 0;
+		}
+	}
+	
+	h2{
+		margin-bottom: 59px;
+		padding-top: 123px;
+	}	
+
+	.reviews-block{
+		max-width: 940px;
+		margin: 59px auto;
+		margin-bottom: 0;
+	
+		.content{
+			position: relative;
+			min-height: 351px;
+			margin-top: 36px;
+			background: url(../img/3-review.png) top right no-repeat,
+									#f8faf9;						
+			margin-bottom: 50px;
+			
+			@include tablet{
+				background: url(../img/3review.png) top center no-repeat;
+									//#f8faf9;
+			}
+			
+			.slide{
+				display: flex;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				opacity: 0;
+				z-index: 1;
+				-webkit-transition: opacity 1s;
+				-moz-transition: opacity 1s;
+				-o-transition: opacity 1s;
+				transition: opacity 1s;
+				
+				@include tablet{
+					position: static;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					height: 600px;
+				}
+			}
+			
+			.showing{
+				opacity: 1;
+				z-index: 2;
+			}
+
+			&__photo{
+				margin-left: 45px;
+				margin-top: 51px;
+				
+				@include tablet{
+					margin-left: 0;
+					margin-top: 68px;
+				}
+			}
+
+			&__img{
+				
+				@include tablet{
+					width: 204px;
+					margin: 0 auto;
+				}
+				
+				img{
+					width: 100%;
+				}
+			}
+
+			&__text{
+				margin-left: 20px;
+				
+				@include tablet{
+					padding-bottom: 37px;
+					margin-left: 0;
+				}
+			}
+
+			&__subtitle{
+				color: #323232;
+				font-family: "Alegreya Sans";
+				font-size: 30px;
+				padding-top: 69px;
+				
+				@include tablet{
+					padding-top: 21px;
+					width: 300px;
+					margin: 0 auto;
+				}
+			}	
+
+			&__review{
+				max-width: 433px;
+				min-height: 103px;
+				color: #666666;
+				font-family: "Alegreya Sans";
+				font-size: 18px;
+				margin-top: 29px;
+				
+				@include tablet{
+					margin-top: 20px;
+					max-width: 402px;
+				}
+			}	
+
+			&__underline{
+				color: #666666;
+				font-family: "Alegreya Sans";
+				font-size: 18px;
+				margin-top: 34px;
+			}	
+		}
+		
+		.photos{
+			min-height: 198px;
+			display: flex;
+			justify-content: center;
+			
+			.active{
+				background: $green;
+				border-radius: 50%;
+				width: 108px;
+				height: 108px;
+				
+				@include tablet{
+					width: 98px;
+					height: 98px;
+				}
+			}
+
+			&__review-photo{
+				margin-right: 40px;
+				cursor: pointer;
+				text-align: center;
+				line-height: 191px;
+				
+				&:last-child{
+					margin-right: 0;
+				}
+				
+				@include tablet{
+					width: 84px;
+					height: 84px;
+					line-height: 174px;
+					
+					img{
+						width: 84px;
+						height: 84px;
+					}
+				}
+			}
+		}			
+	}
+	
+	.decor-figure{
+		width: 134px;
+		height: 422px;	
+		background-image: url("../img/figure.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 72%;
+		left: 0;
+		z-index: 100;
+		
+		@include tablet{
+			background-position: -25px 0;
+			width: 76px;
+			height: 317px;
+			top: 82%;
+		}
+	}
+
+	.decor-berries{
+		width: 154px;
+		height: 220px;
+		background-image: url("../img/berries.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 89%;
+		left: 0;
+		z-index: 110;
+		
+		@include tablet{
+			background-position: -29px 0;
+			width: 95px;
+			height: 176px;
+		}
+	}
+}	
